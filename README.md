@@ -41,13 +41,7 @@ npm install
 ### 2. Environment Variables
 
 In the `server` directory, ensure your `.env` file contains the following (a default one has been generated):
-```env
-PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/student-bunk-meter
-JWT_SECRET=supersecretjwtkey123
-EMAIL_USER=your-email@example.com
-EMAIL_PASS=your-email-password
-```
+
 *Note: Make sure your MongoDB server is running locally on the default port, or change the MONGO_URI to your Atlas connection string.*
 
 ### 3. Running the Application

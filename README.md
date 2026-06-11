@@ -66,3 +66,8 @@ npm run dev
 
 - **Frontend (Vercel):** The Vite project is ready to be deployed to Vercel directly by pushing to GitHub and importing the project.
 - **Backend (Render/Railway):** The Express server is set up with `process.env.PORT` and CORS. You will just need to set the environment variables in your hosting provider's dashboard.
+
+
+Live URL
+Backend:- https://bunk-meter-vjvb.onrender.com
+Frontend:-

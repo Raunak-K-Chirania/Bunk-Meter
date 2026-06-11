@@ -70,4 +70,4 @@ npm run dev
 
 Live URL
 Backend:- https://bunk-meter-vjvb.onrender.com
-Frontend:-
+Frontend:- https://bunk-meter-xudd.onrender.com/

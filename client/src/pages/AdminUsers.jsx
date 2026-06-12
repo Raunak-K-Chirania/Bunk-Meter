@@ -206,7 +206,7 @@ const AdminUsers = () => {
                       {/* User Avatar + Email */}
                       <td className="py-4 px-4 flex items-center gap-3">
                         <div className="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-sm font-bold text-white shrink-0">
-                          {userObj.name?.charAt(0).toUpperCase() || 'U'}
+                          {(userObj.name || 'U').charAt(0).toUpperCase()}
                         </div>
                         <div className="min-w-0">
                           <p className="text-white font-medium text-sm truncate">{userObj.name}</p>

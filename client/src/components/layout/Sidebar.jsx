@@ -100,7 +100,7 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
       <div className="p-3 border-t border-white/5 space-y-2">
         <div className={`flex items-center gap-3 px-3 py-2 rounded-xl ${isCollapsed ? 'justify-center' : ''}`}>
           <div className="w-8 h-8 min-w-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-sm font-bold text-white">
-            {user?.name?.charAt(0).toUpperCase() || 'U'}
+            {(user?.name || 'U').charAt(0).toUpperCase()}
           </div>
           <AnimatePresence>
             {!isCollapsed && (

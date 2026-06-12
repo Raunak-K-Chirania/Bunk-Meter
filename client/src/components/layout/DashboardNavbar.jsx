@@ -55,7 +55,7 @@ const DashboardNavbar = ({ onMenuToggle }) => {
             <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full"></span>
           </Link>
           <Link to="/profile" className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-sm font-bold text-white">
-            {user?.name?.charAt(0).toUpperCase() || 'U'}
+            {(user?.name || 'U').charAt(0).toUpperCase()}
           </Link>
         </div>
       </header>
@@ -107,7 +107,7 @@ const DashboardNavbar = ({ onMenuToggle }) => {
               <div className="p-4 border-t border-white/5">
                 <div className="flex items-center gap-3 px-4 py-3 mb-2">
                   <div className="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center font-bold text-white">
-                    {user?.name?.charAt(0).toUpperCase()}
+                    {(user?.name || 'U').charAt(0).toUpperCase()}
                   </div>
                   <div>
                     <p className="text-white text-sm font-medium">{user?.name}</p>
